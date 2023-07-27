@@ -1,4 +1,4 @@
-name: 'branch-env'
+name: 'branch-envy
 description: 'Sets an environment variable based on the branch.'
 author: 'Benoy Bose <benoybose@gmail.com>'
 inputs:
