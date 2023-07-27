@@ -1,0 +1,19 @@
+name: 'branch-env'
+description: 'Sets an environment variable based on the branch.'
+author: 'Benoy Bose <benoybose@gmail.com>'
+inputs:
+  branch-names:
+    description: 'Comma-separated list of branch names.'
+    required: true
+  variable-values:
+    description: 'Comma-separated list of corresponding values for the branches.'
+    required: true
+  env-variable-name:
+    description: 'Name of the environment variable to be set.'
+    required: true
+outputs:
+  environment-variable:
+    description: 'The name of the environment variable that was set.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
